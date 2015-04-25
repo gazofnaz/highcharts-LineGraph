@@ -1,25 +1,22 @@
 $(function () { 
-    $('#container').highcharts({
+    $( '#container' ).highcharts({
         chart: {
-            type: 'bar'
+            type: 'line'
         },
         title: {
-            text: 'Fruit Consumption'
+            text: 'Occurrences of the word... Gareth'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+            categories: ['2010', '2011', '2012', '2013', '2014', '2015']
         },
         yAxis: {
             title: {
-                text: 'Fruit eaten'
+                text: 'Number of appearances'
             }
         },
         series: [{
-            name: 'Jane',
-            data: [1, 0, 4]
-        }, {
-            name: 'John',
-            data: [5, 7, 3]
+            name: 'Gareth',
+            data: [50, 15, 65, 10, 20, 5]
         }]
     });
 });
